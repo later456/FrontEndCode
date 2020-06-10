@@ -1,0 +1,498 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>在线工具 </title>
+<meta name="keywords" content="在线工具">
+<meta name="applicable-device" content="pc">
+<meta name="siteBaseUrl" content="https://www.wanghu21.xyz">
+<link rel="icon" type="image/x-ico" href="../w.png" />
+<link rel="stylesheet" href="../../View/style/main-1.css">
+<script type="text/javascript" src="../../ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../Plugin/com.min.js"></script>
+<script type="text/javascript" src="../../View/js/min-2.js"></script>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="static/js/jquery.min1.js"></script>
+    
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="static/js/bootstrap.min.js"></script>
+    
+    <!-- 页面通用自定义css文件 -->
+    <link rel="stylesheet" href="static/css/style.css">
+    
+    <!--[if lt IE 9]>
+        <script src="static/js/html5shiv.min.js"></script>
+        <script src="static/js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!--返回顶部插件-->
+    <script type="text/javascript" src="static/js/scrolltopcontrol.js"></script>
+    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?74847c14327db1f3a2f88c2583154efe";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+
+<style>
+#choose-tool span{
+    color: #23527c;
+    cursor: pointer;
+}
+#choose-tool span:hover{
+    color: #23527c;
+    text-decoration: underline;
+}
+#choose-tool .active span{
+    color: #777;
+    cursor: default;
+}
+#choose-tool .active span:hover{
+    color: #777;
+    cursor: default;
+    text-decoration: none;
+}
+</style>
+
+<!--滚动加载插件-->
+<script type="text/javascript" src="static/js/jquery.lazyload.min.js"></script>
+
+
+<script type="text/javascript">
+$(function() {
+    $(".lazy").lazyload({
+        effect: "show",     // effect(特效),值有show(直接显示),fadeIn(淡入),slideDown(下拉)等,常用fadeIn
+        failurelimit: 4,    //加载N张可加区域外的图片
+        threshold: 100 //距离屏幕180px即开始加载
+    });
+    
+    $('#choose-tool li').click(function(){
+        if($(this).attr('class') == 'active') return false;
+        $('.active').removeClass("active");
+        $(this).addClass("active");
+        if($(this).data("class") !== ".tool-item") $(".tool-item").hide();
+        $($(this).data("class")).fadeIn(0);
+    });
+});
+</script>
+
+    
+ 
+<!--二次元人物--><link media="all" href="../dongmanrenwu/autoptimize_775674209b6309bed8b7.css" rel="stylesheet">
+<!--二次元人物--><link rel='stylesheet' id='../dongmanrenwu/APlayer.min-css' href='APlayer.min-2.9.6.css' type='text/css' media='all'>
+<script>
+var mashiro_global = new Object();
+var mashiro_option = new function () {
+    this.app_update = function(isAutoCheck){
+        if(window.app_version < window.latest_version) {
+            if(isAutoCheck) {
+                if(!window.checked) {
+                    window.checked = true;
+                    if(window.app_version<=5) {
+                        if (window.confirm("检测到新版本，是否更新？")) { 
+                            window.open("https://u.2heng.xin/app");
+                        }
+                    } else {
+                        window.open("?mashiroHasUpdate");
+                    }
+                }
+            } else {
+                if(window.app_version<=5) {
+                    setTimeout(function(){
+                        window.open("https://u.2heng.xin/app");
+                    }, 1000);
+                } else {
+                    window.open("?mashiroHasUpdate");
+                }
+            }
+        } else {
+            if(window.app_version<=5) {
+                isAutoCheck ? console.info("Auto Check：已经是最新版本") : addComment.createButterbar("已经是最新版本");
+            } else {
+                isAutoCheck ? console.info("Auto Check：已经是最新版本") : window.open("?mashiroNoUpdate");
+            }
+        }
+    }
+}
+mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.7.5/css/lib.min.css";
+//mashiro_option.head_notice = "off";
+//mashiro_option.land_at_home = true;
+</script>
+
+    
+    </head> 
+
+<body>
+	<script>
+    var xlm_wid='15877';
+    var xlm_url='https://www.xianliao.me/';
+   </script>
+   <script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+
+
+    	<script type='text/javascript' src='../dongmanrenwu/lib.min-3.1.5.js'></script>
+  	<script defer="" src="../dongmanrenwu/autoptimize_e927f87bc428147919c2.js"></script>
+	<div class="prpr">
+		<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+	</div>
+	<div class="live2d-tool hide-live2d no-select" onclick="hide_live2d()">
+		<div class="keys">
+		   Hide
+		</div>
+	</div>
+	<div class="live2d-tool switch-live2d no-select" onclick="switch_pio()">
+		<div class="keys">
+			换&nbsp;装
+		</div>
+	</div>
+	<div class="live2d-tool save-live2d no-select" onclick="save_pio()">
+		<div class="keys">
+			保&nbsp;存
+		</div>
+	</div>
+
+<div class="headerContainer headerBg dianyingdianshi"><div class="headerInner">
+	<div class="headerLeft">
+		<div class="headerLogo"><a href="../../index.html"></a></div>		
+		<div class="headerMenu">
+			<li class="selected"><a href="../../index.html">首页</a></li>
+            <li><a title="资源管理平台，仅个人使用" href="http://www.wanghu21.xyz:9601">个人文件管理</a></li>
+            <li><a href="###">工具下载</a></li>
+            <li><a href="../../liuyanban.html">问题反馈</a></li>
+            <li><a title="勿点击，此项仅为个人作业发布使用" href="###">个人作业发布</a></li>       
+		</div>
+	</div>
+	<!---headerLeft--->
+	<div class="headerRight">
+		<div class="headerUserMenu">
+			 
+			<li class="headerUserPopMenu">
+							</li>
+		</div>
+	</div>
+	<!---headerRight--->
+    </div>
+         <div class="soFormContainer"><div class="soInner">
+                            <!--<div class="soTypeTab">
+                    <li id="76"><a href="">站内</a></li>
+                    <li id="102"><a href="">网页</a></li>
+                    <li id="99"><a href="">影视</a></li>
+                    <li id="100"><a href="">网盘</a></li>
+                    <li id="101"><a href="">磁力</a></li>
+                    <li id="94"><a href="">小说</a></li>
+                        </div>-->
+        <!--<div class="soForm">
+    	<form method="post" action="https://www.wanghu21.xyz/So/go/" target="_blank">
+        <input id="soAutoTip" type="hidden">
+        <input id="souId" name="souId" type="hidden">
+        <div class="soOuter"><div class="input">
+            <input type="text" id="soInput" name="soInput" value="" incolor="#555" outcolor="#aaa" sotype="2">
+        </div></div>
+        <div class="subBtn"><a id="soSubmit" href=""></a></div>
+        </form>
+    </div>-->
+    <br/><br/><br/>
+    <div class="soItems">
+        <li><a href="">&nbsp;</a></li>
+    </div>
+</div></div></div>
+<!---headerContainer--->
+	                      <div class="scrollNav scrollNav_typeNav scrollNav_headerNav"><div class="mainContainer xscrollMenu_outer"><div class="xscrollMenu">
+	                      	<li>                <a href="../xuexiyuandi/index.html">学习园地</a></li><li class="sp"></li>
+                            <li>                <a href="../ruanjiangongju/index.html">软件工具</a></li><li class="sp"></li> 
+                            <li>                <a href="http://user.wanghu21.xyz/type/ziyuansousuo/shujujiansuo.html">数据检索</a></li><li class="sp"></li>
+                            <li class="selected"><a href="../zaixiangongju/index1.html">在线工具</a></li><li class="sp"></li>
+                            <li>                <a href="../shejidaohang/index.html">设计导航</a></li><li class="sp"></li>
+                            <li >               <a href="../dianyingdianshi/index.html">电影电视</a></li><li class="sp"></li>
+                            <li>                <a href="../dongmanciyuan/index.html">动漫次元</a></li><li class="sp"></li>
+                            
+ 
+                                    </div></div></div>
+                                    <br/>
+
+<div class="container">  
+<ol class="breadcrumb" id="choose-tool">
+    <li class="active" data-class=".tool-item"><span>所有工具</span></li>
+    <li data-class=".zz"><span>站长工具</span></li>
+    <li data-class=".bm"><span>便民工具</span></li>
+    <li data-class=".cx"><span>程序员工具</span></li>
+    <li data-class=".yl"><span>娱乐工具</span></li>
+</ol>
+<div class="row">
+	  <div class="col-sm-6 col-md-4 col-lg-3 tool-item bm">
+        <div class="thumbnail">
+            <a href="baidu.html" title="百度高级搜索">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/baidu.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="baidu.html" title="百度高级搜索">百度高级搜索<br><small>by mengkun</small></a>
+                </h3>
+                <p>
+                    百度不到想要的内容？或许只是你的姿势不对！                </p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="highlight.html" title="在线代码高亮">
+                <img class="lazy" src="static/picture/highlight.png" data-original="static/picture/highlight.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="highlight.html" title="在线代码高亮">在线代码高亮<br><small>by CodeRender</small></a>
+                </h3>
+                <p>
+                    在线生成代码的高亮效果HTML源代码，可以将生成的代码插入到你的个人博客或是网页                </p>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="hexconvert.html" title="在线进制转换">
+                <img class="lazy" src="static/picture/hexconvert.png" data-original="static/picture/hexconvert.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="hexconvert.html" title="在线进制转换">在线进制转换<br><small>by 开源中国</small></a>
+                </h3>
+                <p>
+                    支持在2~36进制之间进行任意转换，支持浮点型                </p>
+            </div>
+        </div>
+    </div>
+ 
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="autoprefixer.html" title="Autoprefixer" target="_blank">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/autoprefixer.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="autoprefixer.html" title="Autoprefixer" target="_blank">Autoprefixer<br><small>by ymatuhin</small></a>
+                </h3>
+                <p>
+                    根据设置浏览器版本自动处理css浏览器前缀。而不必人工去设置各浏览器兼容                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="cssbeautify.html" title="CSS 一键美化">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/cssbeautify.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="cssbeautify.html" title="CSS 一键美化">CSS 一键美化<br><small>by Sencha Labs</small></a>
+                </h3>
+                <p>
+                    一键美化css文件，使之易于阅读                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="js.html" title="js加密解密格式化">
+                <img class="lazy" src="static/picture/js.png" data-original="static/picture/js.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="js.html" title="js加密解密格式化">js加密解密格式化<br><small>by Edwards</small></a>
+                </h3>
+                <p>
+                    js压缩、eval加密/解密以及格式化                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="codeonline.html" title="在线代码编辑器">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/codeonline.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="codeonline.html" title="在线代码编辑器">在线代码编辑器<br><small>by codemirror</small></a>
+                </h3>
+                <p>
+                    带代码高亮功能的在线 html 代码编辑器，可供临时调试使用                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="json.html" title="JSON 在线解析">
+                <img class="lazy" src="static/picture/null.png"  width="300" height="150"><!-- data-original="static/picture/json.png"-->
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="json.html" title="JSON 在线解析">JSON 在线解析<br><small>by jsoneditor</small></a>
+                </h3>
+                <p>
+                    一键格式化 JSON 数据，支持在线编辑 JSON，支持将 JSON 转换为 XML、YAML、CSV格式                </p>
+            </div>
+        </div>
+    </div>
+        <!--<div class="col-sm-6 col-md-4 col-lg-3 tool-item bm">
+        <div class="thumbnail">
+            <a href="ocr.html" title="OCR文字识别">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/ocr.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="ocr.html" title="OCR文字识别">OCR文字识别<br><small>by sogou</small></a>
+                </h3>
+                <p>
+                    免费的文字在线识别工具，支持多场景下的文字检测识别，能识别所有常用字和大部分生僻字                </p>
+            </div>
+        </div>
+    </div>-->
+ 
+   
+<!-- 
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item bm cx">
+        <div class="thumbnail">
+            <a href="bduss.html" title="BDUSS获取器">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/BDUSS.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="bduss.html" title="BDUSS获取器">BDUSS获取器<br><small>by 彩虹</small></a>
+                </h3>
+                <p>
+                    在线获取百度BDUSS                </p>
+            </div>
+        </div>
+    </div>-->
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item bm cx">
+        <div class="thumbnail">
+            <a href="dwz.html" title="短网址/还原">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/dwz.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="dwz.html" title="短网址/还原">短网址/还原<br><small>by mengkun</small></a>
+                </h3>
+                <p>
+                    智能识别输入的网址，如果是短网址，则还原为长网址；如果是长网址则缩短                </p>
+            </div>
+        </div>
+    </div>
+ 
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item bm cx">
+        <div class="thumbnail">
+            <a href="password.html" title="随机密码生成器">
+                <img class="lazy" src="static/picture/password.png" data-original="static/picture/password.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="password.html" title="随机密码生成器">随机密码生成器<br><small>by 小影志</small></a>
+                </h3>
+                <p>
+                    生成一串完全随机的字符串，长度及包含的字符均可自定义                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item bm zz cx">
+        <div class="thumbnail">
+            <a href="unicode.html" title="在线编码解码">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/unicode.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="unicode.html" title="在线编码解码">在线编码解码<br><small>by mengkun</small></a>
+                </h3>
+                <p>
+                    本工具是在线编码转换，为您提供Unicode编码解码与url编码解码                </p>
+            </div>
+        </div>
+    </div>
+  
+  
+    
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="base64.html" title="图片转 Base64 ">
+                <img class="lazy" src="static/picture/null.png" data-original="static/picture/null.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="base64.html" title="图片转 Base64 ">图片转 Base64 <br><small>by mengkun</small></a>
+                </h3>
+                <p>
+                    图片与base64编码相互转换                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item cx">
+        <div class="thumbnail">
+            <a href="htmlescape.html" title="Html转义">
+                <img class="lazy" src="static/picture/htmlescape.png" data-original="static/picture/htmlescape.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="htmlescape.html" title="Html转义">Html转义<br><small>by mengkun</small></a>
+                </h3>
+                <p>
+                    对html特殊字符进行转义处理，附带 html 转义字符对照表                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 tool-item bm zz">
+        <div class="thumbnail">
+            <a href="htmlubb.html" title="HTML/UBB代码转换">
+                <img class="lazy" src="static/picture/htmlubb.png" data-original="static/picture/htmlubb.png" width="300" height="150">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="htmlubb.html" title="HTML/UBB代码转换">HTML/UBB代码转换<br><small>by 站长工具</small></a>
+                </h3>
+                <p>
+                    html代码和UBB代码相互转换                </p>
+            </div>
+        
+        </div>
+    </div>
+  
+
+<!--公共foot部分开始（本footer由代码动态生成）-->
+
+<style type="text/css">
+#container{
+    /*保证footer是相对于container位置绝对定位*/
+    position:relative;  
+    width:100%;
+    min-height:100%; 
+    /*设置padding-bottom值大于等于footer的height值，以保证main的内容能够全部显示出来而不被footer遮盖；*/  
+    padding-bottom: 21px;  
+    box-sizing: border-box;
+}
+footer{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    align:center;
+}
+</style>
+<div id="container">
+	<footer>
+		<a href="http://www.beian.miit.gov.cn/" >
+			&#12288;&#12288;&#12288;&#12288;&#12288;&#12288; &#12288;&#12288;&#12288;&#12288;&#12288;&#12288; &#12288;&#12288;&#12288;&#12288;&#12288;&#12288; &#12288;&#12288;&#12288;&#12288;&#12288;&#12288; &#12288;&#12288;&#12288;&#12288;&#12288;<img src="static/picture/20190410102033956.png">&#32; 鄂ICP备19025076号-1
+		</a>
+	</footer>
+</div></div>
+</div><!--class="container"中部容器-->
+<!--网页版通用js文件-->
+<script type="text/javascript" src="static/js/jquery.mktoolbox.js"></script>
+</body> 
+</html> 

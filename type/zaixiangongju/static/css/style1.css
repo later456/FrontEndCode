@@ -1,0 +1,29 @@
+* {
+    transition: null;
+	-webkit-transition: null;
+	-moz-transition: null;
+	-o-transition: null;
+	-ms-transition: null;
+}
+
+.col-md-6 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#beautified, #raw {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    border: 1px solid #bbb;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.toolbar {
+    margin-top: 15px;
+}
+.toolbar span {
+    display: inline-block;
+    margin-right: 25px;
+}

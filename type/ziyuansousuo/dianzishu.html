@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" manifest="cache.appcache">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>电子书搜索</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+  <meta name="keywords" content="电子书,kindle电子书,找书,搜书,文档搜索,开源电子书,免费电子书">   
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/meg.css">
+  <script src="js/config3.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="icon" type="image/x-ico" href="../w.png" />
+  </head> 
+ <body>
+ 	<script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+ 	</script>
+  <div id="nav">
+
+   <ul id="skin-nav">
+    <li><a class="logo" href=""><img src="images/logo_source.png"></a></li>
+       <li><a href="http://user.wanghu21.xyz/type/ziyuansousuo/shujujiansuo.html">数据检索</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/xueshusousuo.html"> 学术期刊</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/juhesousuo.html">搜索引擎</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/dianzishu.html">电子书籍</a></li>
+       <li><a href="http://user.wanghu21.xyz/type/ziyuansousuo/tupian.html" >图片素材</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/xuexiyuandi/index.html">返回主页</a></li>
+   </ul>
+  </div>
+  <div class="container">
+   <div class="left-nav">
+    <ul id="foo">
+     <li id="jiumodiary"><img src="images/jiumodiary.png"><a data="https://www.jiumodiary.com">鸠摩搜索</a></li>  
+     <li id="zqbook"><img src="images/zqbook.jpg"><a data="https://www.zqbook.top/">智奇搜书</a></li>
+     <li id="vdisk"><img src="images/vdisk.jpg"><a data="https://vdisk.weibo.com/">新浪微盘</a></li>
+     <li id="owllook"><img src="images/owllook.jpg"><a data="https://www.owllook.net/">中文小说</a></li>
+     <li id="libgen"><img src="images/libgen.jpg"><a data="https://libgen.is/">LibGen<sup>2M</sup></a></li>
+     <li id="zlibrary"><img src="images/booksc.jpg"><a data="https://b-ok.org/">ZLibrary</a></li> 
+     <li id="booksc"><img src="images/booksc.jpg"><a data="https://booksc.org/">BookSC</a></li> 
+     <li id="shuge"><img src="images/shuge.jpg"><a data="https://new.shuge.org/">书格</a></li> 
+     <li id="duxiu"><img src="images/open-i.jpg"><a data="https://www.duxiu.com/" target="_blank">读秀图书</a></li> 
+     <li id="vol"><img src="images/vol.jpg"><a data="https://vol.moe/">kindle 漫画</a></li>
+     <li id="ltfc"><img src="images/sci-hub.jpg"><a data="https://ltfc.net/">中华珍宝馆</a></li> 
+     <li id="ctext"><img src="images/cnki.jpg"><a data="https://ctext.org/search.pl?if=gb&remap=gb">诸子百家</a></li>
+      </ul>
+    <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+    </script>
+    <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
+    <script>$(".left-nav").mCustomScrollbar({theme:"minimal"});</script>
+   </div>
+   <div class="main">
+    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+   </div>
+  </div>
+  <div class="footer">
+  	<a href="http://www.beian.miit.gov.cn/">鄂ICP备19025076号-1</a><a>Copyright © 2020 "Tool set" All Rights Reserved</a>
+  </div>
+  <link href="css/csshake.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/ui-dialog.css">
+  <script src="js/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="css/messenger.css">
+  <link rel="stylesheet" type="text/css" href="css/messenger-theme-ice.css">
+  <script src="js/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js/color3.js"></script>
+ </body>
+</html>

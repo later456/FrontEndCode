@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" type="image/x-ico" href="../w.png" />
+
+		<meta charset="UTF-8">
+		<title>数独</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script src="spotplus.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var pageNames='数独';
+			spot('../wlmtplus/spot/',pageNames,'访问埋点');
+		</script>
+	</head>
+	<body>
+			<script>
+    var xlm_wid='15877';
+    var xlm_url='https://www.xianliao.me/';
+   </script>
+   <script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>	
+		
+		<div id="content">
+			<!--标题-->
+			<div id="logo">
+				<img src="logo.gif">
+			</div>
+			<!--游戏区域-->
+			<div id="gameArea">
+				<!--左边棋盘-->
+				<div class="left">
+					<!--棋盘-->
+					<div id="app"></div>
+				</div>
+				<!--右侧其他-->
+				<div class="right">
+					<div class="rightInner">
+						<div class="item">
+							<div id="time">00:00</div>
+							<div id="steps">0次click</div>
+						</div>
+						<div class="item" id="difficultyBtns">
+							<div class="difficultyBtn" id="easy">简单</div>
+							<div class="difficultyBtn active" id="normal">普通</div>
+							<div class="difficultyBtn" id="hard">很难</div>
+						</div>
+						<div class="item" id="controlBtns">
+							<div class="controlBtn" id="check">确认完成</div>
+							<div class="controlBtn" id="play">开始游戏</div>
+							<div class="controlBtn" id="stop">停止游戏</div>
+							<div class="controlBtn" id="see">查看答案</div>
+						</div>
+						<div class="item">
+							<p class="rule">游戏规则：填入数字1-9，使每行每列且每个九宫格内数字都不重复。</p>
+						</div>
+						<div class="item" id="resultBox"></div>
+						<div class="item" id="copyBox">
+							<style>a {TEXT-DECORATION: none;color: #EEEEEE;}</style><p class="slogn">页面还没写，玩个小游戏放松一下吧!<br/><br/>
+										<a href="http://www.beian.miit.gov.cn/"> 鄂ICP备19025076号-1 </a></p>
+							<!--<p class="copy">later</p>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<script src="js.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js.min.js"></script>
+  <script type="text/javascript">
+    new Monitor({
+            pageName: '数独'
+        });
+  </script>
+
+	</body>
+</html>

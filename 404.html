@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>404错误，抱歉，出现错误了！</title>
+<link type="text/css" rel="stylesheet" href="./css/base_404.css">
+<link type="text/css" rel="stylesheet" href="./css/global_404.css">
+<link type="text/css" rel="stylesheet" href="./css/404.css">
+<link rel="icon" type="image/x-ico" href="type/w.png" />
+
+</head>
+<body>
+	<script>
+    var xlm_wid='15877';
+    var xlm_url='https://www.xianliao.me/';
+   </script>
+   <script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+	<div class="wrap">
+    	<div class="errors">
+        	<div class="text">
+            	<h4>抱歉，出现错误了！</h4>
+                <p>无法访问本页面的原因是：</p>
+                <p>所访问的页面不存在或者被管理员删除！</p>
+                <p>将在<span id="downTime">6秒</span>后为自动返回到上一页，</p>
+                <p>如果您的浏览器没有自动跳转，请<span onclick="turnUrl()">点击此链接</span>。</p>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+var t, downSecond = 6;
+document.getElementById("downTime").innerHTML = downSecond + "秒";
+t = setInterval(function() { 
+	downSecond --;
+	document.getElementById("downTime").innerHTML = downSecond + "秒";
+	if(downSecond == 0) {
+		clearInterval(t);
+		turnUrl();
+	}
+}, 1000);
+function turnUrl() {
+	if(history.length > 1) {
+		history.back();
+	} else {
+		window.location = "./index.html";
+	}
+}
+</script>
+</body>
+</html>

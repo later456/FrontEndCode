@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="网盘搜索,百度网盘搜索,网盘搜索大全">
+
+<title>网盘搜索</title>
+<style type="text/css">
+   body{text-align:center;height:100%;background-color:#fff;}
+.logo{width:275px;height:71px;margin:9% auto 30px}
+input[type=submit],input[type=button]{float: left;display:inline-block;color:#fff;background-color:#4185f4;border-radius:2px;height:40px;line-height:27px;font-family:Arial,Microsoft YaHei;font-size:16px;padding:0 20px;border:none;cursor:pointer;letter-spacing:8px}
+input[type=text]{float:left;width:500px;height:32px;padding:3px 10px;margin-bottom:30px;border:1px solid #cdcdcd;font-size:16px;outline: 0;}
+#weibo-search{display:block;width:618px;margin:0 auto}
+#add{float:left;width:610px;height:250px;display:inline-block;margin-right:13px;background-image:url(mw690/b1601727ly1fln3iq6sxaj20go0dw0v9.jpg);background-size: contain;}section img{width: 300px;height: 250px;border: none;}
+</style>
+</head>
+<body>
+<img class="logo" title="网盘搜索" src="images/123.png"><section class="search" id="weibo-search">
+<div class="middle" id="tijiao">
+    <input name="" type="text" id="weibo" autocomplete="off" value="" autofocus="">
+    <input type="submit" value="搜索" onclick="weibo()">
+    <script type="text/javascript">
+            function weibo() {
+                var s = document.getElementById('weibo').value;
+                window.open("https://www.58wangpan.com/search/kw" + s , "_self");
+            }
+            </script>
+</div>
+<script type="text/javascript">   
+    document.getElementById('tijiao').onkeydown=keyDownSearch; 
+    function keyDownSearch(e) {  
+        var theEvent = e || window.event;  
+        var code = theEvent.keyCode || theEvent.which || theEvent.charCode;  
+        if (code == 13) {   
+            weibo();
+            return false;  
+        }  
+        return true;  
+    } 
+</script>
+<div id="add">
+    <script async="" src="js/adsbygoogle.js"></script> 
+    
+    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-2768071208062273" data-ad-slot="8349162549"></ins> 
+    <script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</section>
+</body>
+</html>

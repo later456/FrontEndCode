@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" manifest="cache.appcache">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>学术搜索</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+  <meta name="keywords" content="学术搜索,学术检索,文献检索,学术社区,学术导航">
+     
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/meg.css">
+  <script src="js/config3.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="icon" type="image/x-ico" href="../w.png" />
+  </head> 
+ <body>
+ 	<script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+ 	</script>
+  <div id="nav">
+
+   <ul id="skin-nav">
+    <li><a class="logo" href=""><img src="images/logo_source.png"></a></li>
+       <li><a href="http://user.wanghu21.xyz/type/ziyuansousuo/shujujiansuo.html">数据检索</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/xueshusousuo.html"> 学术期刊</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/juhesousuo.html">搜索引擎</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/dianzishu.html">电子书籍</a></li>
+       <li><a href="http://user.wanghu21.xyz/type/ziyuansousuo/tupian.html" >图片素材</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/xuexiyuandi/index.html">返回主页</a></li>
+   </ul>
+  </div>
+  <div class="container">
+   <div class="left-nav">
+    <ul id="foo">
+					<li id="bing"><img src="images/bing1.jpg">
+						<a data="https://www.bing.com/academic/">微软学术</a>
+					</li>
+					<li id="baidu"><img src="images/baidu1.jpg">
+						<a data="https://xueshu.baidu.com/">百度学术</a>
+					</li>
+					<li id="sougou"><img src="images/sogou.jpg">
+						<a data="https://scholar.sogou.com/">搜狗学术</a>
+					</li>
+
+					<li id="aminer"><img src="images/aminer.jpg">
+						<a data="https://aminer.org/">AMiner</a>
+					</li>
+					<li id="sci-hub"><img src="images/sci-hub.jpg">
+						<a data="https://sci-hub.se/">Sci-Hub</a>
+					</li>
+					<li id="cnki"><img src="images/cnki.jpg">
+						<a data="https://www.cnki.net/">CNKI</a>
+					</li>
+					<li id="pubmed"><img src="images/pubmed.jpg">
+						<a data="https://www.ncbi.nlm.nih.gov/pubmed/">PubMed</a>
+					</li>
+
+					<!--<li id="nlc"><img src="images/nlc.jpg">
+						<a data="https://www.wanghu.com/wenjin.html">国图文津</a>
+					</li>-->		
+					<li id="x-mol"><img src="images/x-mol.jpg">
+						<a data="https://www.x-mol.com/journal/advanceSearch">X-MOL</a>
+					</li>
+					<li id="termonline"><img src="images/termonline.jpg">
+						<a data="https://www.termonline.cn/index.htm">术语搜索</a>
+					</li>
+					<li id="base"><img src="images/base.jpg">
+						<a data="https://www.base-search.net/">比勒费尔德学术</a>
+					</li>
+					<li id="sjr"><img src="images/scimagojr.jpg">
+						<a data="https://www.scimagojr.com/index.php">SJR</a>
+					</li>
+					<li id="letpub"><img src="images/letpub.jpg">
+						<a data="https://www.letpub.com.cn/index.php?page=journalapp">SCI影响因子</a>
+					</li>
+			
+					<li id="doi"><img src="images/doi.jpg">
+						<a data="https://dx.doi.org/">英文DOI</a>
+					</li>
+					
+					<li id="mit"><img src="images/mit.jpg">
+						<a data="https://web.mit.edu/search.html">麻省理工文献</a>
+					</li>
+					<li id="cam"><img src="images/cam.jpg">
+						<a data="https://www.repository.cam.ac.uk/discover">剑桥大学知识库</a>
+					</li>
+					
+      </ul>
+    <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+    </script>
+    <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
+    <script>$(".left-nav").mCustomScrollbar({theme:"minimal"});</script>
+   </div>
+   <div class="main">
+    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+   </div>
+  </div>
+  <div class="footer">
+  	<a href="http://www.beian.miit.gov.cn/">鄂ICP备19025076号-1</a><a>Copyright © 2020 "Tool set" All Rights Reserved</a>
+  </div>
+  <link href="css/csshake.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/ui-dialog.css">
+  <script src="js/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="css/messenger.css">
+  <link rel="stylesheet" type="text/css" href="css/messenger-theme-ice.css">
+  <script src="js/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js/color3.js"></script>
+ </body>
+</html>

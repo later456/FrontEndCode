@@ -1,0 +1,205 @@
+*{
+    padding:0;
+    margin:0 auto;
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+
+body {
+    background-color: #EEF1EB;
+}
+
+img {
+    border:none;
+}
+
+.content {  
+    width: 80%;
+    margin: 0 auto;
+    position:relative;
+}
+
+.title {    
+    font-size:40px;
+    text-align:center;
+    font-weight:700;
+    color: #6BC30D;
+    margin: 40px 0;
+}
+
+.content p {
+    color:#474747;
+    font-size:15px;
+    padding:0 69px;
+}
+
+#listing {      
+	background-color: #FFFFFF;
+	width: 90%;
+}
+
+#listing .head{  
+    font-weight: 800;
+    color: #fff;
+    background-color: #787977;
+    text-align: center!important;
+    padding: 10px 5px 10px 5px;
+}
+#listing .head .name{  
+    margin-left: 24px;
+}
+#listing a {
+    color: #787977;
+	display: block;
+	padding: 10px 5px 10px 5px;
+	text-decoration: none;
+	text-align: right;
+}
+
+#listing a:hover {
+	background-color: #F8F9F7;
+}
+
+#listing a img {    
+	float: left;
+	margin-right: 4px;
+	width: 20px;
+}
+
+#listing .name { 
+	width: 20%;
+	float: left;
+	cursor: hand;
+	cursor: pointer;
+	text-align: left;
+}
+
+#listing .describe {     
+    float: left;
+    cursor: hand;
+    cursor: pointer;
+    
+    font-style: normal;
+    text-align: left;
+    display: block;  
+    width: 50%;  
+    word-break: keep-all;  
+    white-space: nowrap;  
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+}
+
+#listing .time{  
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+
+#footer{    
+    clear: both;
+    font-size: 11px;
+    color: #999999;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#footer .links a {
+    color:#999999;
+}
+
+#footer .links {
+    text-align:center;
+}
+
+#footer .links .pipe {      
+    color:#cccccc;
+}
+
+
+
+@media screen and (max-width: 600px) {  
+    body{
+        overflow-x: hidden;
+    }
+    .content {
+        width: 100%;
+    }
+    .content p {
+        padding: 0;
+    }
+	#listing {      
+    	width: 100%;
+    }
+    #listing .describe {     
+        display: none!important;
+    }
+    #listing .time{  
+        text-align: right!important;
+    }
+}
+
+.clippy, .clippy-balloon {
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.clippy-balloon {
+
+    background: #FFC;
+    color: black;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.clippy-content {
+    max-width: 200px;
+    min-width: 120px;
+    font-family: "Microsoft Sans", sans-serif;
+    font-size: 10pt;
+}
+
+.clippy-tip {
+    width: 10px;
+    height: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF///MAAAA////52QwgAAAAAN0Uk5T//8A18oNQQAAAGxJREFUeNqs0kEOwCAIRFHn3//QTUU6xMyyxii+jQosrTPkyPEM6IN3FtzIRk1U4dFeKWQiH6pRRowMVKEmvronEynkwj0uZJgR22+YLopPSo9P34wJSamLSU7lSIWLJU7NkNomNlhqxUeAAQC+TQLZyEuJBwAAAABJRU5ErkJggg==) no-repeat;
+    position: absolute;
+}
+
+.clippy-top-left .clippy-tip {
+    top: 100%;
+    margin-top: 0px;
+    left: 100%;
+    margin-left: -50px;
+}
+
+.clippy-top-right .clippy-tip {
+    top: 100%;
+    margin-top: 0px;
+    left: 0;
+    margin-left: 50px;
+    background-position: -10px 0;
+
+}
+
+.clippy-bottom-right .clippy-tip {
+    top: 0;
+    margin-top: -16px;
+    left: 0;
+    margin-left: 50px;
+    background-position: -10px -16px;
+}
+
+.clippy-bottom-left .clippy-tip {
+    top: 0;
+    margin-top: -16px;
+    left: 100%;
+    margin-left: -50px;
+    background-position: 0px -16px;
+}

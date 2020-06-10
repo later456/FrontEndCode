@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb" manifest="cache.appcache">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>聚合搜索引擎</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
+  <meta name="keywords" content="聚合百度,必应等国内外综合搜索和学术,资源,专业领域知识等垂直搜索。">
+  <meta name="revised" content="Chong, 2020/03/02/">   
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" type="text/css" href="css/meg.css">
+  <script src="js/config3.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="icon" type="image/x-ico" href="../w.png" />
+  </head> 
+ <body>
+ 	<script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+ 	</script>
+  <div id="nav">
+
+   <ul id="skin-nav">
+    <li><a class="logo" href=""><img src="images/logo_source.png"></a></li>
+       <li><a href="http://user.wanghu21.xyz/type/ziyuansousuo/shujujiansuo.html">数据检索</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/xueshusousuo.html"> 学术期刊</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/juhesousuo.html">搜索引擎</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/ziyuansousuo/dianzishu.html">电子书籍</a></li>
+       <li><a href="http://user.wanghu21.xyz/type/ziyuansousuo/tupian.html" >图片素材</a></li>
+       <li><a href="https://www.wanghu21.xyz/type/xuexiyuandi/index.html">返回主页</a></li>
+   </ul>
+  </div>
+  <div class="container">
+   <div class="left-nav">
+    <ul id="foo">
+<!--    <li id="google"><img src="images/google.jpg"><a data="https://www.google.cn/">Google</a></li>-->
+   <li id="baidu"><img src="images/baidu.jpg"><a data="https://www.baidu.com/">百度</a></li>
+   <li id="cnbing"><img src="images/bing.jpg"><a data="https://cn.bing.com/">必应</a></li>
+   <li id="dogedoge"><img src="images/dogedoge.jpg"><a data="https://www.dogedoge.com/">DogeDoge</a></li>
+   <li id="miji"><img src="images/miji.png"><a data="https://mijisou.com/">秘迹搜索</a></li>
+<!--   <li id="wikipedia"><img src="images/wikipedia.png"><a data="https://www.wikipedia.org/">Wikipedia</a></li>--> 
+  <li id="baidu_advanced"><img src="images/baidu.jpg"><a data="https://www.baidu.com/gaoji/advanced.html">百度高级</a></li>
+   <li id="sogou_advanced"><img src="images/sogou.jpg"><a data="https://www.sogou.com/advanced/advanced.html">搜狗高级</a></li>
+   <li id="weibo"><img src="images/weibo.jpg"><a data="https://s.weibo.com/">微博搜索</a></li>
+   <li id="wechat"><img src="images/weixin.jpg"><a data="https://weixin.sogou.com/">搜狗微信</a></li>
+   <li id="zhihu"><img src="images/zhihu.jpg"><a data="https://zhihu.sogou.com/?p=75351223&p=">搜狗知乎</a></li>
+
+   <li id="lanzou"><img src="images/lanzou.jpg"><a data="https://www.lanzous.com/">蓝奏云</a></li>
+   <li id="easyicon"><img src="images/easyicon.jpg"><a data="https://www.easyicon.net/">图标</a></li>
+   <li id="gif"><img src="images/soogif.jpg"><a data="https://www.soogif.com/">GIF动图</a></li>
+   <li id="jiumodiary"><img src="images/jiumodiary.png"><a data="https://www.jiumodiary.com/">电子书</a></li>
+   <li id="github"><img src="images/github.jpg"><a data="https://github.com/search">GitHub</a></li>
+   <li id="open"><img src="images/kaiyuan.jpg"><a data="https://www.openhub.net/">开源代码</a></li>
+   <li id="wolf"><img src="images/wolframalpha.jpg"><a data="https://www.wolframalpha.com/">Wolfram Alpha</a></li>
+   <li id="kuaidi"><img src="images/kuaidi.jpg"><a data="https://www.kuaidi100.com/">快递</a></li>
+   <li id="gepu"><img src="images/zhaogepu.jpg"><a data="https://www.zhaogepu.com/">找歌谱</a></li>
+   <li id="bilibili"><img src="images/bilibili.jpg"><a data="https://search.bilibili.com/">哔哩哔哩</a></li>
+   <li id="nyaso"><img src="images/nyaso.jpg"><a data="https://nyaa.si/">动漫资源</a></li>
+   <li id="kisssub"><img src="images/kisssub.jpg"><a data="https://www.kisssub.org/">动漫 BT</a></li>
+   <li id="acgsou"><img src="images/acg.jpg"><a data="https://www.acgsou.com/">ACG搜</a></li>
+   <li id="qichacha"><img src="images/qichacha.png"><a data="https://www.qichacha.com/">查企业</a></li>
+   <li id="baidushitu"><img src="images/baidu.jpg"><a data="https://stu.baidu.com/">百度识图</a></li>
+   <li id="font"><img src="images/qiuziti.jpg"><a data="https://www.likefont.com/">字体识别</a></li>
+   <li id="visualhunt"><img src="images/visualhunt.jpg"><a data="https://visualhunt.com/">Visual Hunt</a></li>
+   <li id="mba"><img src="images/mbalib.jpg"><a data="https://www.mbalib.com/">MBA智库</a></li>
+   <li id="makedie"><img src="images/zimu.jpg"><a data="https://assrt.net/">字幕反向搜索</a></li>
+   <li id="innojoy"><img src="images/patMain.jpg"><a data="https://www.innojoy.com/search/index.shtml">专利检索</a></li>
+      </ul>
+    <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+    </script>
+    <script src="js/jquery.mCustomScrollbar.concat.m.js"></script>
+    <script>$(".left-nav").mCustomScrollbar({theme:"minimal"});</script>
+   </div>
+   <div class="main">
+    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+   </div>
+  </div>
+  <div class="footer">
+  	<a href="http://www.beian.miit.gov.cn/">鄂ICP备19025076号-1</a><a>Copyright © 2020 "Tool set" All Rights Reserved</a>
+  </div>
+  <link href="css/csshake.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/ui-dialog.css">
+  <script src="js/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="css/messenger.css">
+  <link rel="stylesheet" type="text/css" href="css/messenger-theme-ice.css">
+  <script src="js/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="js/color3.js"></script>
+ </body>
+</html>

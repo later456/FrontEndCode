@@ -1,0 +1,834 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>在线工具 </title>
+<meta name="keywords" content="在线工具">
+<meta name="applicable-device" content="pc">
+<meta name="siteBaseUrl" content="https://www.wanghu21.xyz">
+<link rel="icon" type="image/x-ico" href="../w.png" />
+<link rel="stylesheet" href="../../View/style/main-1.css">
+<script type="text/javascript" src="../../ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../Plugin/com.min.js"></script>
+<script type="text/javascript" src="../../View/js/min-2.js"></script>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="static/js/jquery.min1.js"></script>
+    
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="static/js/bootstrap.min.js"></script>
+    
+    <!-- 页面通用自定义css文件 -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <script type="text/javascript" src="static/js/scrolltopcontrol.js"></script>
+   
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?74847c14327db1f3a2f88c2583154efe";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
+<!-- ZeroClipboard插件 -->
+<script src="static/js/ZeroClipboard.min.js"></script>
+<script type="text/javascript" src="static/js/underscore-min.js"></script>
+
+</head> 
+
+<body>
+
+	<script>
+    var xlm_wid='15877';
+    var xlm_url='https://www.xianliao.me/';
+   </script>
+   <script type='text/javascript' charset='UTF-8' src='https://www.xianliao.me/embed.js'></script>
+                                                
+<div class="headerContainer headerBg dianyingdianshi"><div class="headerInner">
+	<div class="headerLeft">
+		<div class="headerLogo"><a href="../../index.html"></a></div>		
+		<div class="headerMenu">
+			<li class="selected"><a href="../../index.html">首页</a></li>
+            <li><a title="资源管理平台，仅个人使用" href="http://www.wanghu21.xyz:9601">个人文件管理</a></li>
+            <li><a href="###">工具下载</a></li>
+            <li><a href="../../liuyanban.html">问题反馈</a></li>
+            <li><a title="勿点击，此项仅为个人作业发布使用" href="###">个人作业发布</a></li>       
+		</div>
+	</div>
+	<!---headerLeft--->
+	<div class="headerRight">
+		<div class="headerUserMenu">
+			 
+			<li class="headerUserPopMenu">
+							</li>
+		</div>
+	</div>
+	<!---headerRight--->
+    </div>
+         <div class="soFormContainer"><div class="soInner">
+                            <!--<div class="soTypeTab">
+                    <li id="76"><a href="">站内</a></li>
+                    <li id="102"><a href="">网页</a></li>
+                    <li id="99"><a href="">影视</a></li>
+                    <li id="100"><a href="">网盘</a></li>
+                    <li id="101"><a href="">磁力</a></li>
+                    <li id="94"><a href="">小说</a></li>
+                        </div>-->
+        <!--<div class="soForm">
+    	<form method="post" action="https://www.wanghu21.xyz/So/go/" target="_blank">
+        <input id="soAutoTip" type="hidden">
+        <input id="souId" name="souId" type="hidden">
+        <div class="soOuter"><div class="input">
+            <input type="text" id="soInput" name="soInput" value="" incolor="#555" outcolor="#aaa" sotype="2">
+        </div></div>
+        <div class="subBtn"><a id="soSubmit" href=""></a></div>
+        </form>
+    </div>-->
+    <br/><br/><br/><br/>
+    <div class="soItems">
+        <li><a href="">&nbsp;</a></li>
+    </div>
+</div></div></div>
+<!---headerContainer--->
+	                      <div class="scrollNav scrollNav_typeNav scrollNav_headerNav"><div class="mainContainer xscrollMenu_outer"><div class="xscrollMenu">
+	                      	<li>                <a href="../xuexiyuandi/index.html">学习园地</a></li><li class="sp"></li>
+                            <li>                <a href="../ruanjiangongju/index.html">软件工具</a></li><li class="sp"></li> 
+                            <li>                <a href="http://user.wanghu21.xyz/type/ziyuansousuo/shujujiansuo.html">数据检索</a></li><li class="sp"></li>
+                            <li class="selected">             <a href="../zaixiangongju/index1.html">在线工具</a></li><li class="sp"></li>
+                            <li>                <a href="../shejidaohang/index.html">设计导航</a></li><li class="sp"></li>
+                            <li >               <a href="../dianyingdianshi/index.html">电影电视</a></li><li class="sp"></li>
+                            <li>                <a href="../dongmanciyuan/index.html">动漫次元</a></li><li class="sp"></li>
+                            
+ 
+                                    </div></div></div>
+                                    <br/>
+	<div id="particles"></div>
+<div class="container nav-main">
+
+
+
+<div class="container">
+    
+<div class="panel panel-default">
+<div class="panel-heading">html 转义</div>
+<div class="panel-body">
+    <textarea id='codes' class="form-control" rows="8"></textarea><br>
+    <input type="button" value="html 转义" onclick="htmlEncode()" class="btn btn-default">
+    <input type="button" value="html 反转义" onclick="htmlDecode()" class="btn btn-default">
+    <input type='button' value="复制文本" id="copy" data-clipboard-target="codes" class="btn btn-default">
+    <input type="button" value="清空内容" onclick="$('#codes').val('');" class="btn btn-default">
+</div>
+</div>
+
+<script>
+    var inputBox = $("#codes");
+    
+    function htmlEncode() {
+        inputBox.val(_.escape(inputBox.val()));
+    }
+    
+    function htmlDecode() {
+        inputBox.val(_.unescape(inputBox.val()));
+    }
+    
+    // 复制功能
+    var clip = new ZeroClipboard($("#copy"));
+</script>
+
+<div class="panel panel-default">
+    <div class="panel-heading">html 转义字符对照表</div>
+    <div class="panel-body">
+        <p>常用字符</p>
+        <div class="row">
+            <div class="col-md-6">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th class="separateColor">字符</th>
+                    <th>十进制</th>
+                    <th>转义字符</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="separateColor">"</td>
+                    <td>&amp;#34;</td>
+                    <td>&amp;quot;</td>
+                </tr>
+                <tr>
+                    <td class="separateColor">&amp;</td>
+                    <td>&amp;#38;</td>
+                    <td>&amp;amp;</td>
+                </tr>
+                <tr>
+                    <td class="separateColor">&lt;</td>
+                    <td>&amp;#60;</td>
+                    <td>&amp;lt;</td>
+                </tr>
+                <tr>
+                    <td class="separateColor">&gt;</td>
+                    <td>&amp;#62;</td>
+                    <td>&amp;gt;</td>
+                </tr>
+                <tr>
+                    <td class="separateColor">不断开空格(non-breaking space)</td>
+                    <td>&amp;#160;</td>
+                    <td>&amp;nbsp;</td>
+                </tr>
+                </tbody></table>
+            
+            </div>  <!--class="col-md-1"-->
+        </div>  <!--class="row"-->
+        <p>特殊符号（您可以按快捷键 <kbd>Ctrl + f</kbd> 搜索）</p>
+        <div class="row">
+            <div class="col-md-12 table-responsive">
+                <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th width="17%">特殊符号</th>
+                    <th width="17%">命名实体</th>
+                    <th width="17%">十进制编码</th>
+                    <th width="17%">特殊符号</th>
+                    <th width="17%">命名实体</th>
+                    <th width="17%">十进制编码</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>Α</td>
+                <td>&amp;Alpha;</td>
+                <td>&amp;#913;</td>
+                <td>Β</td>
+                <td>&amp;Beta;</td>
+                <td>&amp;#914;</td>
+                </tr>
+                <tr>
+                <td>Γ</td>
+                <td>&amp;Gamma;</td>
+                <td>&amp;#915;</td>
+                <td>Δ</td>
+                <td>&amp;Delta;</td>
+                <td>&amp;#916;</td>
+                </tr>
+                <tr>
+                <td>Ε</td>
+                <td>&amp;Epsilon;</td>
+                <td>&amp;#917;</td>
+                <td>Ζ</td>
+                <td>&amp;Zeta;</td>
+                <td>&amp;#918;</td>
+                </tr>
+                <tr>
+                <td>Η</td>
+                <td>&amp;Eta;</td>
+                <td>&amp;#919;</td>
+                <td>Θ</td>
+                <td>&amp;Theta;</td>
+                <td>&amp;#920;</td>
+                </tr>
+                <tr>
+                <td>Ι</td>
+                <td>&amp;Iota;</td>
+                <td>&amp;#921;</td>
+                <td>Κ</td>
+                <td>&amp;Kappa;</td>
+                <td>&amp;#922;</td>
+                </tr>
+                <tr>
+                <td>Λ</td>
+                <td>&amp;Lambda;</td>
+                <td>&amp;#923;</td>
+                <td>Μ</td>
+                <td>&amp;Mu;</td>
+                <td>&amp;#924;</td>
+                </tr>
+                <tr>
+                <td>Ν</td>
+                <td>&amp;Nu;</td>
+                <td>&amp;#925;</td>
+                <td>Ξ</td>
+                <td>&amp;Xi;</td>
+                <td>&amp;#926;</td>
+                </tr>
+                <tr>
+                <td>Ο</td>
+                <td>&amp;Omicron;</td>
+                <td>&amp;#927;</td>
+                <td>Π</td>
+                <td>&amp;Pi;</td>
+                <td>&amp;#928;</td>
+                </tr>
+                <tr>
+                <td>Ρ</td>
+                <td>&amp;Rho;</td>
+                <td>&amp;#929;</td>
+                <td>Σ</td>
+                <td>&amp;Sigma;</td>
+                <td>&amp;#931;</td>
+                </tr>
+                <tr>
+                <td>Τ</td>
+                <td>&amp;Tau;</td>
+                <td>&amp;#932;</td>
+                <td>Υ</td>
+                <td>&amp;Upsilon;</td>
+                <td>&amp;#933;</td>
+                </tr>
+                <tr>
+                <td>Φ</td>
+                <td>&amp;Phi;</td>
+                <td>&amp;#934;</td>
+                <td>Χ</td>
+                <td>&amp;Chi;</td>
+                <td>&amp;#935;</td>
+                </tr>
+                <tr>
+                <td>Ψ</td>
+                <td>&amp;Psi;</td>
+                <td>&amp;#936;</td>
+                <td>Ω</td>
+                <td>&amp;Omega;</td>
+                <td>&amp;#937;</td>
+                </tr>
+                <tr>
+                <td>α</td>
+                <td>&amp;alpha;</td>
+                <td>&amp;#945;</td>
+                <td>β</td>
+                <td>&amp;beta;</td>
+                <td>&amp;#946;</td>
+                </tr>
+                <tr>
+                <td>γ</td>
+                <td>&amp;gamma;</td>
+                <td>&amp;#947;</td>
+                <td>δ</td>
+                <td>&amp;delta;</td>
+                <td>&amp;#948;</td>
+                </tr>
+                <tr>
+                <td>ε</td>
+                <td>&amp;epsilon;</td>
+                <td>&amp;#949;</td>
+                <td>ζ</td>
+                <td>&amp;zeta;</td>
+                <td>&amp;#950;</td>
+                </tr>
+                <tr>
+                <td>η</td>
+                <td>&amp;eta;</td>
+                <td>&amp;#951;</td>
+                <td>θ</td>
+                <td>&amp;theta;</td>
+                <td>&amp;#952;</td>
+                </tr>
+                <tr>
+                <td>ι</td>
+                <td>&amp;iota;</td>
+                <td>&amp;#953;</td>
+                <td>κ</td>
+                <td>&amp;kappa;</td>
+                <td>&amp;#954;</td>
+                </tr>
+                <tr>
+                <td>λ</td>
+                <td>&amp;lambda;</td>
+                <td>&amp;#955;</td>
+                <td>μ</td>
+                <td>&amp;mu;</td>
+                <td>&amp;#956;</td>
+                </tr>
+                <tr>
+                <td>ν</td>
+                <td>&amp;nu;</td>
+                <td>&amp;#957;</td>
+                <td>ξ</td>
+                <td>&amp;xi;</td>
+                <td>&amp;#958;</td>
+                </tr>
+                <tr>
+                <td>ο</td>
+                <td>&amp;omicron;</td>
+                <td>&amp;#959;</td>
+                <td>π</td>
+                <td>&amp;pi;</td>
+                <td>&amp;#960;</td>
+                </tr>
+                <tr>
+                <td>ρ</td>
+                <td>&amp;rho;</td>
+                <td>&amp;#961;</td>
+                <td>ς</td>
+                <td>&amp;sigmaf;</td>
+                <td>&amp;#962;</td>
+                </tr>
+                <tr>
+                    <th width="17%">特殊符号</th>
+                    <th width="17%">命名实体</th>
+                    <th width="17%">十进制编码</th>
+                    <th width="17%">特殊符号</th>
+                    <th width="17%">命名实体</th>
+                    <th width="17%">十进制编码</th>
+                </tr>
+                <tr>
+                <td>σ</td>
+                <td>&amp;sigma;</td>
+                <td>&amp;#963;</td>
+                <td>τ</td>
+                <td>&amp;tau;</td>
+                <td>&amp;#964;</td>
+                </tr>
+                <tr>
+                <td>υ</td>
+                <td>&amp;upsilon;</td>
+                <td>&amp;#965;</td>
+                <td>φ</td>
+                <td>&amp;phi;</td>
+                <td>&amp;#966;</td>
+                </tr>
+                <tr>
+                <td>χ</td>
+                <td>&amp;chi;</td>
+                <td>&amp;#967;</td>
+                <td>ψ</td>
+                <td>&amp;psi;</td>
+                <td>&amp;#968;</td>
+                </tr>
+                <tr>
+                <td>ω</td>
+                <td>&amp;omega;</td>
+                <td>&amp;#969;</td>
+                <td>ϑ</td>
+                <td>&amp;thetasym;</td>
+                <td>&amp;#977;</td>
+                </tr>
+                <tr>
+                <td>ϒ</td>
+                <td>&amp;upsih;</td>
+                <td>&amp;#978;</td>
+                <td>ϖ</td>
+                <td>&amp;piv;</td>
+                <td>&amp;#982;</td>
+                </tr>
+                <tr>
+                <td>•</td>
+                <td>&amp;bull;</td>
+                <td>&amp;#8226;</td>
+                <td>…</td>
+                <td>&amp;hellip;</td>
+                <td>&amp;#8230;</td>
+                </tr>
+                <tr>
+                <td>′</td>
+                <td>&amp;prime;</td>
+                <td>&amp;#8242;</td>
+                <td>″</td>
+                <td>&amp;Prime;</td>
+                <td>&amp;#8243;</td>
+                </tr>
+                <tr>
+                <td>‾</td>
+                <td>&amp;oline;</td>
+                <td>&amp;#8254;</td>
+                <td>⁄</td>
+                <td>&amp;frasl;</td>
+                <td>&amp;#8260;</td>
+                </tr>
+                <tr>
+                <td>℘</td>
+                <td>&amp;weierp;</td>
+                <td>&amp;#8472;</td>
+                <td>ℑ</td>
+                <td>&amp;image;</td>
+                <td>&amp;#8465;</td>
+                </tr>
+                <tr>
+                <td>ℜ</td>
+                <td>&amp;real;</td>
+                <td>&amp;#8476;</td>
+                <td>&trade;</td>
+                <td>&amp;trade;</td>
+                <td>&amp;#8482;</td>
+                </tr>
+                <tr>
+                <td>ℵ</td>
+                <td>&amp;alefsym;</td>
+                <td>&amp;#8501;</td>
+                <td>←</td>
+                <td>&amp;larr;</td>
+                <td>&amp;#8592;</td>
+                </tr>
+                <tr>
+                <td>↑</td>
+                <td>&amp;uarr;</td>
+                <td>&amp;#8593;</td>
+                <td>→</td>
+                <td>&amp;rarr;</td>
+                <td>&amp;#8594;</td>
+                </tr>
+                <tr>
+                <td>↓</td>
+                <td>&amp;darr;</td>
+                <td>&amp;#8595;</td>
+                <td>↔</td>
+                <td>&amp;harr;</td>
+                <td>&amp;#8596;</td>
+                </tr>
+                <tr>
+                <td>↵</td>
+                <td>&amp;crarr;</td>
+                <td>&amp;#8629;</td>
+                <td>⇐</td>
+                <td>&amp;lArr;</td>
+                <td>&amp;#8656;</td>
+                </tr>
+                <tr>
+                <td>⇑</td>
+                <td>&amp;uArr;</td>
+                <td>&amp;#8657;</td>
+                <td>⇒</td>
+                <td>&amp;rArr;</td>
+                <td>&amp;#8658;</td>
+                </tr>
+                <tr>
+                <td>⇓</td>
+                <td>&amp;dArr;</td>
+                <td>&amp;#8659;</td>
+                <td>⇔</td>
+                <td>&amp;hArr;</td>
+                <td>&amp;#8660;</td>
+                </tr>
+                <tr>
+                <td>∀</td>
+                <td>&amp;forall;</td>
+                <td>&amp;#8704;</td>
+                <td>∂</td>
+                <td>&amp;part;</td>
+                <td>&amp;#8706;</td>
+                </tr>
+                <tr>
+                <td>∃</td>
+                <td>&amp;exist;</td>
+                <td>&amp;#8707;</td>
+                <td>∅</td>
+                <td>&amp;empty;</td>
+                <td>&amp;#8709;</td>
+                </tr>
+                <tr>
+                <td>∇</td>
+                <td>&amp;nabla;</td>
+                <td>&amp;#8711;</td>
+                <td>∈</td>
+                <td>&amp;isin;</td>
+                <td>&amp;#8712;</td>
+                </tr>
+                <tr>
+                <td>∉</td>
+                <td>&amp;notin;</td>
+                <td>&amp;#8713;</td>
+                <td>∋</td>
+                <td>&amp;ni;</td>
+                <td>&amp;#8715;</td>
+                </tr>
+                <tr>
+                <td>∏</td>
+                <td>&amp;prod;</td>
+                <td>&amp;#8719;</td>
+                <td>∑</td>
+                <td>&amp;sum;</td>
+                <td>&amp;#8722;</td>
+                </tr>
+                <tr>
+                <th width="17%">特殊符号</th>
+                <th width="17%">命名实体</th>
+                <th width="17%">十进制编码</th>
+                <th width="17%">特殊符号</th>
+                <th width="17%">命名实体</th>
+                <th width="17%">十进制编码</th>
+                </tr>
+                <tr>
+                <td>−</td>
+                <td>&amp;minus;</td>
+                <td>&amp;#8722;</td>
+                <td>∗</td>
+                <td>&amp;lowast;</td>
+                <td>&amp;#8727;</td>
+                </tr>
+                <tr>
+                <td>√</td>
+                <td>&amp;radic;</td>
+                <td>&amp;#8730;</td>
+                <td>∝</td>
+                <td>&amp;prop;</td>
+                <td>&amp;#8733;</td>
+                </tr>
+                <tr>
+                <td>∞</td>
+                <td>&amp;infin;</td>
+                <td>&amp;#8734;</td>
+                <td>∠</td>
+                <td>&amp;ang;</td>
+                <td>&amp;#8736;</td>
+                </tr>
+                <tr>
+                <td>∧</td>
+                <td>&amp;and;</td>
+                <td>&amp;#8869;</td>
+                <td>∨</td>
+                <td>&amp;or;</td>
+                <td>&amp;#8870;</td>
+                </tr>
+                <tr>
+                <td>∩</td>
+                <td>&amp;cap;</td>
+                <td>&amp;#8745;</td>
+                <td>∪</td>
+                <td>&amp;cup;</td>
+                <td>&amp;#8746;</td>
+                </tr>
+                <tr>
+                <td>∫</td>
+                <td>&amp;int;</td>
+                <td>&amp;#8747;</td>
+                <td>∴</td>
+                <td>&amp;there4;</td>
+                <td>&amp;#8756;</td>
+                </tr>
+                <tr>
+                <td>∼</td>
+                <td>&amp;sim;</td>
+                <td>&amp;#8764;</td>
+                <td>≅</td>
+                <td>&amp;cong;</td>
+                <td>&amp;#8773;</td>
+                </tr>
+                <tr>
+                <td>≈</td>
+                <td>&amp;asymp;</td>
+                <td>&amp;#8773;</td>
+                <td>≠</td>
+                <td>&amp;ne;</td>
+                <td>&amp;#8800;</td>
+                </tr>
+                <tr>
+                <td>≡</td>
+                <td>&amp;equiv;</td>
+                <td>&amp;#8801;</td>
+                <td>≤</td>
+                <td>&amp;le;</td>
+                <td>&amp;#8804;</td>
+                </tr>
+                <tr>
+                <td>≥</td>
+                <td>&amp;ge;</td>
+                <td>&amp;#8805;</td>
+                <td>⊂</td>
+                <td>&amp;sub;</td>
+                <td>&amp;#8834;</td>
+                </tr>
+                <tr>
+                <td>⊃</td>
+                <td>&amp;sup;</td>
+                <td>&amp;#8835;</td>
+                <td>⊄</td>
+                <td>&amp;nsub;</td>
+                <td>&amp;#8836;</td>
+                </tr>
+                <tr>
+                <td>⊆</td>
+                <td>&amp;sube;</td>
+                <td>&amp;#8838;</td>
+                <td>⊇</td>
+                <td>&amp;supe;</td>
+                <td>&amp;#8839;</td>
+                </tr>
+                <tr>
+                <td>⊕</td>
+                <td>&amp;oplus;</td>
+                <td>&amp;#8853;</td>
+                <td>⊗</td>
+                <td>&amp;otimes;</td>
+                <td>&amp;#8855;</td>
+                </tr>
+                <tr>
+                <td>⊥</td>
+                <td>&amp;perp;</td>
+                <td>&amp;#8869;</td>
+                <td>⋅</td>
+                <td>&amp;sdot;</td>
+                <td>&amp;#8901;</td>
+                </tr>
+                <tr>
+                <td>⌈</td>
+                <td>&amp;lceil;</td>
+                <td>&amp;#8968;</td>
+                <td>⌉</td>
+                <td>&amp;rceil;</td>
+                <td>&amp;#8969;</td>
+                </tr>
+                <tr>
+                <td>⌊</td>
+                <td>&amp;lfloor;</td>
+                <td>&amp;#8970;</td>
+                <td>⌋</td>
+                <td>&amp;rfloor;</td>
+                <td>&amp;#8971;</td>
+                </tr>
+                <tr>
+                <td>◊</td>
+                <td>&amp;loz;</td>
+                <td>&amp;#9674;</td>
+                <td>♠</td>
+                <td>&amp;spades;</td>
+                <td>&amp;#9824;</td>
+                </tr>
+                <tr>
+                <td>♣</td>
+                <td>&amp;clubs;</td>
+                <td>&amp;#9827;</td>
+                <td>♥</td>
+                <td>&amp;hearts;</td>
+                <td>&amp;#9829;</td>
+                </tr>
+                <tr>
+                <td>♦</td>
+                <td>&amp;diams;</td>
+                <td>&amp;#9830;</td>
+                <td></td>
+                <td>&amp;nbsp;</td>
+                <td>&amp;#160;</td>
+                </tr>
+                <tr>
+                <td>¡</td>
+                <td>&amp;iexcl;</td>
+                <td>&amp;#161;</td>
+                <td>¢</td>
+                <td>&amp;cent;</td>
+                <td>&amp;#162;</td>
+                </tr>
+                <tr>
+                <td>£</td>
+                <td>&amp;pound;</td>
+                <td>&amp;#163;</td>
+                <td>¤</td>
+                <td>&amp;curren;</td>
+                <td>&amp;#164;</td>
+                </tr>
+                <tr>
+                <th width="17%">特殊符号</th>
+                <th width="17%">命名实体</th>
+                <th width="17%">十进制编码</th>
+                <th width="17%">特殊符号</th>
+                <th width="17%">命名实体</th>
+                <th width="17%">十进制编码</th>
+                </tr>
+                <tr>
+                <td>¥</td>
+                <td>&amp;yen;</td>
+                <td>&amp;#165;</td>
+                <td>¦</td>
+                <td>&amp;brvbar;</td>
+                <td>&amp;#166;</td>
+                </tr>
+                <tr>
+                <td>§</td>
+                <td>&amp;sect;</td>
+                <td>&amp;#167;</td>
+                <td>¨</td>
+                <td>&amp;uml;</td>
+                <td>&amp;#168;</td>
+                </tr>
+                <tr>
+                <td>&copy;</td>
+                <td>&amp;copy;</td>
+                <td>&amp;#169;</td>
+                <td>ª</td>
+                <td>&amp;ordf;</td>
+                <td>&amp;#170;</td>
+                </tr>
+                <tr>
+                <td>«</td>
+                <td>&amp;laquo;</td>
+                <td>&amp;#171;</td>
+                <td>¬</td>
+                <td>&amp;not;</td>
+                <td>&amp;#172;</td>
+                </tr>
+                <tr>
+                <td>­</td>
+                <td>&amp;shy;</td>
+                <td>&amp;#173;</td>
+                <td>&reg;</td>
+                <td>&amp;reg;</td>
+                <td>&amp;#174;</td>
+                </tr>
+                <tr>
+                <td>¯</td>
+                <td>&amp;macr;</td>
+                <td>&amp;#175;</td>
+                <td>°</td>
+                <td>&amp;deg;</td>
+                <td>d&amp;#176;</td>
+                </tr>
+                <tr>
+                <td>±</td>
+                <td>&amp;plusmn;</td>
+                <td>&amp;#177;</td>
+                <td>²</td>
+                <td>&amp;sup2;</td>
+                <td>&amp;#178;</td>
+                </tr>
+                <tr>
+                <td>³</td>
+                <td>&amp;sup3;</td>
+                <td>&amp;#179;</td>
+                <td>´</td>
+                <td>&amp;acute;</td>
+                <td>&amp;#180;</td>
+                </tr>
+                <tr>
+                <td>µ</td>
+                <td>&amp;micro;</td>
+                <td>&amp;#181;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>  <!--class="col-md-1"-->
+        </div>  <!--class="row"-->
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">工具简介</div>
+    <div class="panel-body">
+        <p>html转义\反转义</p>
+    </div>
+</div>
+
+<!--公共foot部分开始（本footer由代码动态生成）-->
+
+<footer >
+  
+    <div class="text-center copyright">
+      <span><a style="color: #040505;"><p> <a style="color: #040505;"></a></a><br/> <a href="http://www.beian.miit.gov.cn/" style="color: #040505;">鄂ICP备19025076号-1</p></a></span>
+    </div>
+</footer>
+
+</div><!--class="container"中部容器-->
+
+<!--孟坤工具箱网页版通用js文件-->
+<script type="text/javascript" src="static/js/jquery.mktoolbox.js"></script>
+
+<style></body></style>
+
+</body> 
+</html> 

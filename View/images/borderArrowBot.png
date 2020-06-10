@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noindex,nofollow">
+<title>404 Not Found</title>
+<style type="text/css">
+<!--
+body{margin:0;padding:0;color:#666;font-size:0.95em;font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;background-color:#fff}
+ul,li,img{margin:0;padding:0;border:0;}
+div,ul,li{list-style:none;zoom:1; overflow:hidden}
+.forward{margin-top:10px;padding-left:10px;}
+.forward li{float:left;padding:0 5px;line-height:30px}
+.forward .tipMsg{color:#666;background-color:#eee}
+.forward a,.forward a:visited {text-decoration:underline}	
+-->
+</style>
+</head>
+<body>
+<div class="forward">
+	<li class="tipMsg">404</li>
+	<li>你访问的地址不存在!</li>
+	<li><a href="javascript:;" onclick="javascript: history.go(-1)">返回上一步</a></li>
+	<li>|</li><li><a href="https://www.miguyu.com">网站首页</a></li>
+</div>
+</body>
+</html>	
